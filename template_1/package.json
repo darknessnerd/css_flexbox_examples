@@ -1,14 +1,10 @@
 {
-  "name": "webpack-starter",
+  "name": "flexbox-layout-template-1",
   "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
+  "description": "Flexbox template 1 ",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
   },
   "keywords": [
     "webpack",
@@ -18,11 +14,8 @@
     "javascript",
     "webdev"
   ],
-  "author": "webkid.io",
+  "author": "crinitib",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbkd/webpack-starter/issues"
-  },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
