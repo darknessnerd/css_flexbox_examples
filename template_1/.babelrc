@@ -1,9 +1,15 @@
 {
-  "presets": [[
-    "env", {
-      "targets": {
-        "browsers": ["Chrome >= 55"]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": "3.0.0"
       }
-    }
-  ]]
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties"
+  ]
 }
