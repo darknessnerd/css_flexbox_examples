@@ -1,5 +1,7 @@
 # Webpack Frontend Starterkit [Flexbox layout]
 
+[![Build Status](https://travis-ci.org/darknessnerd/css_flexbox_examples.svg?branch=master)](https://travis-ci.org/darknessnerd/css_flexbox_examples)
+
 A lightweight foundation for your next webpack based frontend project.
 
 
