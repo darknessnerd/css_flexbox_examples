@@ -1,7 +1,7 @@
 {
   "name": "flexbox-layout-template-1",
   "version": "1.0.0",
-  "description": "Flexbox template 1 ",
+  "description": "Flexbox html5 drag and drop",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
-    "core-js": "^3.6.4"
+    "core-js": "^3.6.4",
+    "jquery": "^3.4.1"
   }
 }

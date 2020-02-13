@@ -1,8 +1,8 @@
 # Webpack Frontend Starterkit [Flexbox layout]
 
-[![Build Status](https://travis-ci.org/darknessnerd/css_flexbox_examples.svg?branch=feature/template_1)](https://travis-ci.org/darknessnerd/css_flexbox_examples)
+[![Build Status](https://travis-ci.org/darknessnerd/css_flexbox_examples.svg?branch=feature/draganddrop)](https://travis-ci.org/darknessnerd/css_flexbox_examples)
 
-A lightweight foundation for your next webpack based frontend project.
+An html5 draganddrop flexbox grid example 
 
 
 ### Installation
@@ -40,7 +40,7 @@ When you run `npm run build` we use the [mini-css-extract-plugin](https://github
        |                 header     (sticky)         |                                      
        |---------------------------------------------|                                      
        |content                                    | |                                      
-       |         (Srollable content )              | |                                      
+       |         ( ITEMS DRAG AND DROP GRID        | |                                      
        |                                           | |                                      
        |                                           | |                                      
        |                                           | |                                      
@@ -48,7 +48,5 @@ When you run `npm run build` we use the [mini-css-extract-plugin](https://github
        |                                           | |                                      
        |                                           | |                                     
        |                                             |                                      
-       |---------------------------------------------|                                      
-       |                 footer       (sticky)       |                                     
        |---------------------------------------------|                                      
                                                        

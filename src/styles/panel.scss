@@ -1,0 +1,42 @@
+.panel{
+  display: flex;
+  flex-direction: column;
+
+
+  //option for parent container
+  flex-basis: 19.2%;
+  border: 1px dashed darkblue;
+
+  justify-content: center;
+}
+
+.panel-header {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: space-between;
+
+  background: greenyellow;
+}
+
+.panel-content {
+  background: black;
+  background: lawngreen;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel.over{
+  border: 1px dashed yellow;
+}
+
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
