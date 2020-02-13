@@ -4,6 +4,8 @@
 
 A lightweight foundation for your next webpack based frontend project.
 
+In every branch will be a complete example with: Flexbox, HTML5 new features, etc..., based on this archetype
+
 
 ### Installation
 
@@ -32,23 +34,16 @@ npm run build
 When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
 
 
-#Template 
+#Templates
 
+
+### Template 1:
                                                                                      
-        Index.html                                                         
-       |---------------------------------------------|                                      
-       |                 header     (sticky)         |                                      
-       |---------------------------------------------|                                      
-       |content                                    | |                                      
-       |         (Srollable content )              | |                                      
-       |                                           | |                                      
-       |                                           | |                                      
-       |                                           | |                                      
-       |                                           | |                                      
-       |                                           | |                                      
-       |                                           | |                                     
-       |                                             |                                      
-       |---------------------------------------------|                                      
-       |                 footer       (sticky)       |                                     
-       |---------------------------------------------|                                      
-                                                       
+   ```
+   git checkout feature/template_1
+   ```                             
+### HTML5 DragAndDrop Grid example:
+                                                                                     
+   ```
+   git checkout feature/draganddrop
+   ```                                                            
