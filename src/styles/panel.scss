@@ -1,0 +1,103 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.panel--highlight {
+  -webkit-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 8px 0 0 #FF6347;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 8px 0 0 #FF6347;
+  padding-top: 8px;
+}
+
+.horizontal-divider{
+  padding: 5px;
+}
+
+.panel-content-wrapper::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+ .panel-content-wrapper::-webkit-scrollbar-thumb {
+   background-color: rgba(76, 82, 99, 0.4);
+   border: 6px solid transparent;
+   background-clip: content-box;
+ }
+
+ .panel-content-wrapper::-webkit-scrollbar-track {
+   background-color: transparent;
+ }
+
+.panel-section {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  max-width: 100%;
+}
+
+.panel-header {
+  color: #767C8A;
+  padding: 8px 24px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  //Allign child
+  display: flex;
+  justify-content: center;
+}
+
+.panel-content {
+  border-top: 1px solid #cfd3dc;
+
+
+  padding: 24px;
+
+  //child layout
+  display: flex;
+}
+.panel-content-bg-grey {
+  background-color: rgba(192, 197, 209, 0.1);
+}
+.panel-content-wrapper {
+  overflow: auto;
+  font-size: 14px;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 920px) {
+  .panel-section {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .panels {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.panels {
+  display: block;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 40px 40px;
+}

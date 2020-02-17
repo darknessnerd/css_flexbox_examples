@@ -1,10 +1,11 @@
-# Webpack Frontend Starterkit [Flexbox layout]
+# Webpack Frontend Starterkit [Flexbox components]
 
-[![Build Status](https://travis-ci.org/darknessnerd/css_flexbox_examples.svg?branch=master)](https://travis-ci.org/darknessnerd/css_flexbox_examples)
+[![Build Status](https://travis-ci.org/darknessnerd/css_flexbox_examples.svg?branch=feature/flex_components)](https://travis-ci.org/darknessnerd/css_flexbox_examples)
 
 A lightweight foundation for your next webpack based frontend project.
 
-In every branch will be a complete example with: Flexbox, HTML5 new features, etc..., based on this archetype
+Flexbox components:
+  
 
 
 ### Installation

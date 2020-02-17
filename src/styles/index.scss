@@ -2,12 +2,27 @@ $body-color: slateblue;
 body {
   color: $body-color;
   font-family: sans-serif;
-  background: whitesmoke;
+  background: white;
 }
+
 //DISABLE ALL PADDIN AND MARGINS
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
+
+body::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+ body::-webkit-scrollbar-thumb {
+   background-color: #4C5263;
+   border: 6px solid transparent;
+   background-clip: content-box;
+ }
+
+ body::-webkit-scrollbar-track {
+   background-color: transparent;
+ }
