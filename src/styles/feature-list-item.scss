@@ -1,0 +1,45 @@
+.feature-list-item {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: flex;
+
+  /**
+   * Align the children in the center, along
+   * the main axis, which is horizontal in this case.
+   */
+  align-items: center;
+
+  max-width: 400px;
+  padding: 10px;
+}
+
+.feature-list-item + .feature-list-item {
+  border-top: 1px solid #D7DBDD;
+}
+
+.feature-list-item--reverse {
+  /**
+   * We can specify the flex-direction so that
+   * the children elements are displayed in the
+   * reverse order of how they appear in the
+   * markup.
+   */
+  flex-direction: row-reverse;
+}
+
+.feature-list-item-icon,
+.feature-list-item-description {
+  padding: 5px 15px;
+}
+
+.feature-list-item-icon {
+  font-size: 50px;
+  line-height: 0;
+}
+
+.feature-list-item-description {
+  color: #57727C;
+  font-size: 12px;
+}

@@ -3,8 +3,40 @@ body {
   color: $body-color;
   font-family: sans-serif;
   background: white;
+
+  height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; //don't wrap the content section
 }
 
+html{
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  height: 100%;
+  overflow-y: auto;
+}
+.panels {
+  display: block;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 40px 40px;
+
+}
+
+@media only screen and (max-width: 420px) {
+  .panels {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 //DISABLE ALL PADDIN AND MARGINS
 * {
   margin: 0;
@@ -12,17 +44,3 @@ body {
   box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
-}
-
- body::-webkit-scrollbar-thumb {
-   background-color: #4C5263;
-   border: 6px solid transparent;
-   background-clip: content-box;
- }
-
- body::-webkit-scrollbar-track {
-   background-color: transparent;
- }

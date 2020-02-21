@@ -1,0 +1,57 @@
+.form-footer {
+    /**
+     * Lay out the children of this container with
+     * flexbox, which is horizontal by default.
+     */
+    display: flex;
+    /**
+     * Make the container put as much space as possible
+     * between its children, with the children at either
+     * end laying flush against the container's edges.
+     */
+    justify-content: space-between;
+    /**
+     * Align the children in the center, along
+     * the main axis, which is horizontal in this case.
+     */
+    align-items: center;
+    border-top: 1px solid #D7DBDD;
+    padding: 10px;
+}
+
+.form-footer-section {
+    /**
+     * This container orders items horizontally.
+     */
+    display: flex;
+
+    /**
+     * It aligns them vertically in the center.
+     */
+    align-items: center;
+}
+
+.formFooter__item + .formFooter__item {
+    margin-left: 5px;
+}
+
+.form-footer-feedback {
+    color: #86969C;
+    font-size: 12px;
+    line-height: 0;
+}
+
+.form-footer-spinner {
+    animation: form-footer-spinner 1s infinite steps(8, end);
+}
+
+@keyframes form-footer-spinner {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.button--clear {
+    color: #16A2D7;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}

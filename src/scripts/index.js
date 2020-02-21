@@ -1,8 +1,18 @@
 import '../styles/index.scss';
+
 import '../styles/panel.scss';
 import '../styles/stepper-input.scss';
 import '../styles/tabs.scss';
 import '../styles/nav-bar.scss';
+import '../styles/form-footer.scss';
+import '../styles/side-bar.scss';
+import '../styles/centered-prompt.scss';
+import '../styles/centered-icon.scss';
+import '../styles/card.scss';
+import '../styles/card-group.scss';
+import  '../styles/post.scss';
+import  '../styles/feature-list-item.scss';
+import  '../styles/photo.scss';
 
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
@@ -39,7 +49,16 @@ $tabs.click(function(event) {
 var $siteHeaderItems = $('.navbar .navbar-item');
 
 $siteHeaderItems.click((event) => {
-    var selectedClass = 'is-site-header-item-selected';
+    var selectedClass = 'is-navbar-item-selected';
     $siteHeaderItems.removeClass(selectedClass);
+    $(event.target).addClass(selectedClass);
+});
+
+//SIDE BAR
+var $sideBarItems = $('.side-bar .side-bar-item');
+
+$sideBarItems.click(function(event) {
+    var selectedClass = 'is-side-bar-item-selected';
+    $sideBarItems.removeClass(selectedClass);
     $(event.target).addClass(selectedClass);
 });
