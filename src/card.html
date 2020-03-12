@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card components</title>
+</head>
+<body>
+
+<div class="side-bar">
+    <!-- This section gets pushed to the top-->
+    <div class="side-bar-section">
+        <div class="side-bar-item " onclick="goto('index')">Index</div>
+        <div class="side-bar-item " onclick="goto('gallery')">Gallery</div>
+        <div class="side-bar-item is-side-bar-item-selected" onclick="goto('card')">Card</div>
+        <div class="side-bar-item " onclick="goto('panel')">Panel</div>
+        <div class="side-bar-item " onclick="goto('nav-bar')">Nav</div>
+        <div class="side-bar-item">
+            <div class="centered-icon">
+                <div class="icon fas fa-info"></div>
+            </div>
+        </div>
+    </div>
+    <!-- This section gets pushed to the bottom-->
+    <div class="side-bar-section">
+        <div class="side-bar-item">Change theme</div>
+        <div class="side-bar-item">Legal</div>
+    </div>
+</div>
+<div class="content content-width-fixed">
+    <!-- SINGLE CARD CARD-->
+    <div class="card card-fixed-width">
+        <div class="card-description">
+            <div class="icon fas fa-flask card-description-icon"></div>
+            <div class="card-description-text">Science potion</div>
+        </div>
+        <div class="card-price">Costs $5</div>
+    </div>
+    <!-- SINGLE CARD-->
+
+    <!-- CARD GROUP-->
+    <div class="card-group">
+        <div class="card card-group-card">
+            <div class="card-description card-group-card-description">
+                <div class="icon fas fa-inbox card-description-icon"></div>
+                <div class="card-description-text">Trial</div>
+            </div>
+            <div class="card-price">Free!</div>
+        </div>
+        <div class="card card-group-card">
+            <div class="card-description card-group-card-description">
+                <div class="icon fas fa-trophy card-description-icon"></div>
+                <div class="card-description-text">Basic tier<br/>(most popular)</div>
+            </div>
+            <div class="card-price">$10.00</div>
+        </div>
+        <div class="card card-group-card">
+            <div class="card-description card-group-card-description">
+                <div class="icon fas fa-bolt card-description-icon"></div>
+                <div class="card-description-text">Advanced tier<br/>(only for enterprise-level professionals)</div>
+            </div>
+            <div class="card-price">$6,000.00</div>
+        </div>
+    </div>
+    <!-- END CARD GROUP-->
+
+</div>
+</body>
+</html>

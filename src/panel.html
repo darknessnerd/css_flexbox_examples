@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card components</title>
+</head>
+<body>
+
+<div class="side-bar">
+    <!-- This section gets pushed to the top-->
+    <div class="side-bar-section">
+        <div class="side-bar-item " onclick="goto('index')">Index</div>
+        <div class="side-bar-item " onclick="goto('gallery')">Gallery</div>
+        <div class="side-bar-item " onclick="goto('card')">Card</div>
+        <div class="side-bar-item is-side-bar-item-selected" onclick="goto('panel')">Panel</div>
+        <div class="side-bar-item " onclick="goto('nav-bar')">Nav</div>
+        <div class="side-bar-item">
+            <div class="centered-icon">
+                <div class="icon fas fa-info"></div>
+            </div>
+        </div>
+    </div>
+    <!-- This section gets pushed to the bottom-->
+    <div class="side-bar-section">
+        <div class="side-bar-item">Change theme</div>
+        <div class="side-bar-item">Legal</div>
+    </div>
+</div>
+<div class="content content-width-fixed">
+
+    <div class="panel panel--highlight">
+        <div class="panel-section">
+            <div class="panel-content ">
+                <div class="centered-prompt">
+                    <div class="centered-prompt-item centered-prompt-icon">
+                        <div class="icon fas fa-smile-wink"></div>
+                    </div>
+                    <div class="centered-prompt-tem centered-prompt-label">Welcome to the app!</div>
+                    <div class="centered-prompt-tem centered-prompt-details">Thanks for signing up. Let&rsquo;s take a
+                        look around.
+                    </div>
+                    <div class="centered-prompt-tem button">Begin tour</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANEL -->
+    <div class="panel ">
+        <div class="panel-section">
+            <div class="panel-header">HEADER TEST</div>
+            <div class="panel-content panel-content-bg-grey">
+                <div class="panel-content-wrapper">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel--highlight">
+
+        <div class="panel-section">
+            <div class="panel-content ">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum."
+            </div>
+        </div>
+    </div>
+    <!-- END PANEL -->
+
+</div>
+</body>
+</html>

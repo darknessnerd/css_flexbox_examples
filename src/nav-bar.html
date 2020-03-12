@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card components</title>
+</head>
+<body>
+
+<div class="side-bar">
+    <!-- This section gets pushed to the top-->
+    <div class="side-bar-section">
+        <div class="side-bar-item " onclick="goto('index')">Index</div>
+        <div class="side-bar-item " onclick="goto('gallery')">Gallery</div>
+        <div class="side-bar-item " onclick="goto('card')">Card</div>
+        <div class="side-bar-item " onclick="goto('panel')">Panel</div>
+        <div class="side-bar-item is-side-bar-item-selected" onclick="goto('nav-bar')">Nav</div>
+        <div class="side-bar-item">
+            <div class="centered-icon">
+                <div class="icon fas fa-info"></div>
+            </div>
+        </div>
+    </div>
+    <!-- This section gets pushed to the bottom-->
+    <div class="side-bar-section">
+        <div class="side-bar-item">Change theme</div>
+        <div class="side-bar-item">Legal</div>
+    </div>
+</div>
+<div class="content content-width-fixed">
+
+    <!-- NAV BAR -->
+    <div class="navbar">
+        <!-- This section gets pushed to the left side-->
+        <div class="navbar-section">
+            <div class="navbar-item navbar-logo">
+                <div class="fas fa-inbox"></div>
+            </div>
+            <div class="navbar-item navbar-button is-navbar-item-selected">Inbox</div>
+            <div class="navbar-item navbar-button">Sent</div>
+            <div class="navbar-item navbar-button">Trash</div>
+        </div>
+        <!-- This section gets pushed to the right side-->
+        <div class="navbar-section">
+            <div class="navbar-item navbar-button">Settings</div>
+            <div class="navbar-item navbar-button">Log out</div>
+        </div>
+    </div>
+    <!-- END NAV BAR -->
+</div>
+</body>
+</html>

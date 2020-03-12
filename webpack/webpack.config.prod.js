@@ -1,7 +1,10 @@
+const path = require('path');
 const Webpack = require('webpack');
 const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const common = require('./webpack.common.js');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -10,7 +13,7 @@ module.exports = merge(common, {
   bail: true,
   output: {
     filename: 'js/[name].[chunkhash:8].js',
-    chunkFilename: 'js/[name].[chunkhash:8].chunk.js'
+    chunkFilename: 'js/[name].[chunkhash:8].chunk.js',
   },
   plugins: [
     new Webpack.DefinePlugin({
@@ -18,7 +21,8 @@ module.exports = merge(common, {
     }),
     new Webpack.optimize.ModuleConcatenationPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'bundle.css'
+      filename: "[name].[contenthash].css",
+      chunkFilename: "[id].[contenthash].css"
     })
   ],
   module: {
@@ -36,6 +40,17 @@ module.exports = merge(common, {
           'sass-loader'
         ]
       }
+    ]
+  },
+  // https://webpack.js.org/configuration/optimization/
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true
+      }),
+      new OptimizeCssAssetsPlugin({})
     ]
   }
 });
