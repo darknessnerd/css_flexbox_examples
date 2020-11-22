@@ -2,12 +2,127 @@ $body-color: slateblue;
 body {
   color: $body-color;
   font-family: sans-serif;
-  background: whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 5px;
+
+}
+
+html, body{
+    height: 100%;
+    background: white;
 }
 //DISABLE ALL PADDIN AND MARGINS
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.container{
+  background: whitesmoke;
+  max-height: 600px;
 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; //FIT TO THE WIDHT
+
+   overflow-y: auto;
+
+   zoom: reset;
+}
+.resizable {
+  background: white;
+  min-height: 50px;
+  min-width: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+
+  padding: 10px;
+}
+
+.resizable .resizers{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+
+  border: 3px solid #4286f4;
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+.resizable .resizers > * {
+  background-color: red;
+  padding: 1px;
+  margin: 1px;
+}
+
+
+//Corner elements
+.resizable .resizers .resizer{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /*magic to turn square into circle*/
+  background: green;
+  border: 3px solid #4286f4;
+  position: absolute;
+}
+.resizable .resizers .resizer.top-left {
+  left: -5px;
+  top: -5px;
+  cursor: nwse-resize; /*resizer cursor*/
+}
+.resizable .resizers .resizer.top-right {
+  right: -5px;
+  top: -5px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-left {
+  left: -5px;
+  bottom: -5px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-right {
+  right: -5px;
+  bottom: -5px;
+  cursor: nwse-resize;
+}
+
+
+
+.fill {
+  background-image: url('https://source.unsplash.com/random/150x150');
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: solid 3px salmon;
+  background: white;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
 }
